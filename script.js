@@ -779,3 +779,120 @@
 
 
 // NUMBER GUESSING GAME
+// const minNum = 1;
+// const maxNum = 100;
+// const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+
+// let attempts = 0
+// let guess 
+// let running = true
+
+// while(running){
+
+//     guess = window.prompt(`Guess a number between ${minNum} - ${maxNum}`)
+//     guess = Number(guess)  // making it int
+
+//     if(isNaN(guess)){  // is this not a number
+//         window.alert("Please enter a valid number")
+//     }
+//     else if(guess < minNum || guess > maxNum){
+//         window.alert("Please enter a valid number")
+//     }
+//     else{
+//         attempts++
+//         if (guess < answer) {
+//             window.alert("TOO LOW! TRY AGAIN");
+//         } else if (guess > answer) {
+//             window.alert("TOO HIGH! TRY AGAIN");
+//         } else {
+//             window.alert(`CORRECT! The answer was ${answer}. It took you ${attempts} attempts`);
+//             running = false;
+//         }
+   
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function = A sectopn of reusable code.
+//            declare code once, use it whenever you want
+//            Call the function to excute that code
+
+
+// function happyBirthday(username, age){
+//     console.log("Happy birthday to you!")
+//     console.log("Happy birthday to you!")
+//     console.log(`Happy birthday dear ${username}!`)
+//     console.log("Happy birthday to you!")
+//     console.log(`You are ${age} year old`)
+// }
+
+// happyBirthday("Gio", 16)
+// happyBirthday("SpongeBob", 30) 
+
+
+
+
+// function add(x, y){
+//     return x + y
+// }
+// function substract(){
+//     return x - y
+// }
+// function multiplay(x, y){
+//     return x * y
+// }
+// function devide(x, y){
+//     return x / y
+// }
+
+
+
+// function isEven(number){
+
+//     if(number % 2 === 0){
+//         return true
+//     }
+//     else{
+//         return false;
+//     }
+// }
+
+
+// function isEven(number){
+//     return number % 2 === 0 ? true : false
+// }
+
+
+// function isValidEmail(email){
+    
+//     if(email.includes("@")){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+
+// }
+
+
+
+
+// function isValidEmail(email){
+    
+//     return email.includes("@") ? true : false
+
+// }
+
