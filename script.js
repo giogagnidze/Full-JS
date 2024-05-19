@@ -896,3 +896,239 @@
 
 // }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// variable scope = where a variable is recognized 
+//                  and accessible (local vs global)
+
+// let x = 1
+// let x = 2 // error
+
+// function function1(){
+//     let x = 1
+//     console.log(x)
+// }
+// function function2(){
+//     let x = 2
+//     console.log(x)
+// }
+
+
+// function function1(){
+//     let x = 1
+//     console.log(y)
+// }
+// function function2(){
+//     let y = 2
+//     console.log(x)    // local scope
+// }
+
+
+// let x = 3
+
+// function function1(){
+//     let x = 1
+//     console.log(x)
+// }
+// function function2(){
+//     let x = 2
+//     console.log(x)      // global scope
+// }
+
+
+
+// function1()
+// function2()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // TEMPERATURE CONVERSION PROGRAM
+
+// const textBox = document.getElementById("textBox")
+// const toFahrenheit = document.getElementById("toFahrenheit")
+// const toCelcius = document.getElementById("toCelcius")
+// const result = document.getElementById("result")
+// let temp
+
+
+// function convert(){
+
+//     if(toFahrenheit.checked){
+//         temp = Number(textBox.value)
+//         temp = temp * 9 / 5 + 32
+//         result.textContent = temp.toFixed(1) + "°F" 
+//     }
+//     else if(toCelcius.checked){
+//         temp = Number(textBox.value)
+//         temp = (temp - 32) * (5 / 9)
+//         result.textContent = temp.toFixed(1) + "°C" 
+//     }
+//     else{
+//         result.textContent = "Select a unit"
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// array = a variable like structure that can hold 
+//         more than 1 value
+
+// let fruits = ["apple", "orange", "banana"]
+
+// fruits[1] = "coconut"  // change value for second item in list
+// fruits.push("kiwi")   // push at last item
+// fruits.pop()    // pop last element
+// fruits.unshift("mango")   // first zero item in list
+// fruits.shift()  // removes item from the beggining
+
+
+// let numOfFruins = fruits.length
+// let index = fruits.indexOf("apple")
+
+// console.log(numOfFruins);
+// console.log(index);
+
+
+
+
+
+
+
+
+// spread operator = ... allows an iterable suck as an
+//                   array or string to be ecpanded
+//                   into seperate elements
+//                   (unpack the elements)
+
+// let number = [1, 2, 3, 4, 5]
+// let max = Math.max(...number)
+// let min = Math.min(...number)  // without spead operator its Nan
+
+// console.log(max);   
+
+
+
+// let username = "TheCodeCrafter"
+// let letters = [...username].join("-")
+
+// console.log(letters); // T-h-e-C-o-d-e-C-r-a-f-t-e-r
+
+
+
+// let fruits = ["apple", "orange", "banana"]
+// let vegetables = ["carrots", "potato"]
+// let foods = [...fruits, ...vegetables, "eggs", "milk"] // adding
+
+
+// console.log(foods);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//rest parameters = (...rest) allow a function work wit a variable
+//                  number of arguments by bundling them into an array
+
+//                  spread = expands an array into seperate elements
+//                  rest = bundles seperate elements into an array
+
+// function openFridge(...foods) {
+//     console.log(...foods);
+// }
+// function gerFood(...foods){
+//     return foods
+// }
+
+// const food1 = "pizza"
+// const food2 = "hanburger"
+// const food3 = "sushi"
+// const food4 = "hotdog"
+// const food5 = "ramen"
+
+// // openFridge(food1, food2, food3, food4, food5)
+// const foods = gerFood(food1, food2, food3, food4, food5)
+
+// console.log(foods)
+
+
+
+// function sum(...numbers){
+
+//     let result = 0
+//     for(let number of numbers){
+//         result += number
+//     }
+//     return result
+// }
+// // const total = sum(1, 2, 3, 4, 5)
+
+// // console.log(`your total is ${total}`);
+
+
+// function gerAvarage(...numbers){
+
+//     let result = 0
+//     for(let number of numbers){
+//         result += number
+//     }
+//     return result / numbers.length
+// }
+// const total = gerAvarage(75, 100, 85, 90, 15)
+// console.log(total);
+
+
+// function combineString(...strings){
+//     return strings.join(" ")
+// }
+
+// const fullname = combineString("mr", "spongebob", "squarepants", "III")
+
+// console.log(fullname);
+
+
+
